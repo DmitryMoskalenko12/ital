@@ -2,3 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+@layer base {
+    body {
+        @apply font-openSans;
+    }
+}
+
+.nav-style {
+    @apply fixed top-0 left-0 w-[50%] h-[100vh] bg-slate-800 transition-all duration-500
+}
+
