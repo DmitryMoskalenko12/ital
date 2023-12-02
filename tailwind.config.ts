@@ -7,7 +7,22 @@ const config: Config = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    screens: {
+     'xs': "320px",
+     'sm': '567px',
+     'md': '767px',
+     'lg': '1199px',
+     'xl': '1399px'
+    },
     extend: {
+      colors: {
+        hakki: '#D8B152'
+      },
+      
+      fontFamily: {
+        openSans: ['Open Sans', 'sans-serif']
+      },
+
       backgroundImage: {
         
       },
@@ -15,4 +30,5 @@ const config: Config = {
   },
   plugins: [],
 }
+
 export default config
