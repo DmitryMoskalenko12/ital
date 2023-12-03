@@ -5,19 +5,23 @@ const config: Config = {
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
+    './ui/**/*.{js,ts,jsx,tsx,mdx}'
   ],
   theme: {
     screens: {
      xs: "320px",
      md: '767px',
+     mdx: '991px',
      lg: '1199px',
      xl: '1399px'
     },
     extend: {
       container: {
+        center: true,
         screens: {
           xs: '100%',
           md: '720px',
+          mdx: '991px',
           lg: '1140px',
           xl: '1320px'
         },
@@ -28,10 +32,6 @@ const config: Config = {
       
       fontFamily: {
         openSans: ['Open Sans', 'sans-serif']
-      },
-
-      backgroundImage: {
-        
       },
     },
   },

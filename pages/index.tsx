@@ -1,8 +1,10 @@
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import Main from '@/components/main/main';
 
 export default function Home() {
   return (
     <>
+    <Main/>
     </>
   )
 }
