@@ -14,3 +14,6 @@
     @apply fixed top-0 left-0 w-[50%] h-[100vh] bg-slate-800 transition-all duration-500
 }
 
+.link-active {
+    @apply font-normal after:bg-hakki after:absolute after:w-full after:h-[1px] after:mb-[-2px] after:bottom-0 after:left-0
+}

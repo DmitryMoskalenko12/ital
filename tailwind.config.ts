@@ -8,13 +8,20 @@ const config: Config = {
   ],
   theme: {
     screens: {
-     'xs': "320px",
-     'sm': '567px',
-     'md': '767px',
-     'lg': '1199px',
-     'xl': '1399px'
+     xs: "320px",
+     md: '767px',
+     lg: '1199px',
+     xl: '1399px'
     },
     extend: {
+      container: {
+        screens: {
+          xs: '100%',
+          md: '720px',
+          lg: '1140px',
+          xl: '1320px'
+        },
+      },
       colors: {
         hakki: '#D8B152'
       },
