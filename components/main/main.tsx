@@ -4,7 +4,7 @@ import Button from "@/ui/button";
 const Main: React.FC = () => {
     const {t} = useTranslation('main');
 
-    return <section className="absolute pt-[140px] md:pt-[250px] px-[20px] top-0 left-0 right-0 bottom-0 -z-1 bg-[url(/images/bg-main.png)] bg-cover bg-center bg-no-repeat min-h-[800px] lg:px-[116px]">
+    return <section className="relative top-[-100px] pt-[140px] md:pt-[250px] px-[20px] left-0 right-0 bottom-0 -z-1 bg-[url(/images/bg-main.png)] bg-cover bg-center bg-no-repeat min-h-[800px] lg:px-[116px]">
         <div className="container">
             <div className="grid grid-cols-1 justify-center mdx:grid-cols-[550px,260px] mdx:gap-[44px] lg:grid-cols-[700px,260px] lg:gap-[0] xl:gap-[44px] xl:grid-cols-[758px,387px]">
                 <h1 className=" font-semibold text-[38px] text-center text-white mb-4 leading-[140%] mdx:text-left mdx:text-[45px] mdx:mb-0 lg:text-[50px] xl:text-[56px]">{t('turnkey')}</h1>

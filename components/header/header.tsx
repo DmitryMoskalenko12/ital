@@ -24,7 +24,7 @@ const Header: React.FC = () => {
     }
 
     return (
-         <header className="pt-[15px] px-[20px] relative z-10 lg:px-[116px]">
+         <header className="pt-[15px] px-[20px] relative z-20 lg:px-[116px]">
             <div className="container">
             <div className="flex justify-between items-center">
             

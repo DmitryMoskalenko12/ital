@@ -27,6 +27,7 @@ const config: Config = {
         },
       },
       colors: {
+        blackMain: '#424242',
         hakki: '#D8B152'
       },
       

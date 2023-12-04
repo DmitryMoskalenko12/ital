@@ -1,0 +1,7 @@
+{
+    "services": [
+        {"src": "/images/service1.png", "content": "home", "buttonContent": "view", "id": 1},
+        {"src": "/images/service2.png", "content": "apartment", "buttonContent": "view", "id": 2},
+        {"src": "/images/service3.png", "content": "non-residential", "buttonContent": "view", "id": 3}
+    ]
+}
