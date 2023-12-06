@@ -21,9 +21,9 @@ const Services: React.FC = () => {
     const content = status === 'idle' ?  data.map(({content, src, buttonContent, id}) => {
         return <div key={id} className=" relative w-[100%] h-[100%]">
                     <Image className="w-[100%] h-[100%] object-cover" src={src} width={285} height={285} alt="Our services"/>
-                    <div className=" absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%]">
-                    <h3 className="text-[28px] text-white font-semibold text-center md:text-[16px]">{t(content)}</h3>
-                    <Button clazz={'mt-[30px] md:text-[14px]'} width={'w-[260px] md:w-[170px]'} height={'h-[60px] md:h-[60px]'} content={t(buttonContent)}/>
+                    <div className=" absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%] lg:w-[100%]">
+                    <h3 className="text-[28px] text-white font-semibold text-center md:text-[16px] mdx:text-[18px] lg:text-[28px]">{t(content)}</h3>
+                    <Button clazz={'mt-[30px] md:text-[14px] lg:text-[18px]'} width={'w-[260px] md:w-[170px] mdx:w-[230px] lg:w-[260px]'} height={'h-[60px] md:h-[50px] mdx:h-[60px] lg:h-[60px]'} content={t(buttonContent)}/>
                     </div>
                </div>
     }) : null;
@@ -32,7 +32,7 @@ const Services: React.FC = () => {
         <section className="pt-[15px] px-[20px] relative top-[-100px]">
             <div className="container">
                 <h2 className=" text-center text-[45px] font-semibold font-blackMain">{t('services')}</h2>
-                <div className=" relative grid grid-cols-1 gap-[10px] md:grid-cols-3 justify-center md:mt-[20px]">
+                <div className=" relative grid grid-cols-1 gap-[10px] md:grid-cols-3 justify-center md:mt-[20px] lg:grid-cols-[repeat(3,360px)] lg:grid-rows-[1,360px] xl:gap-10">
                     {loading}
                     {error}
                     {content}
