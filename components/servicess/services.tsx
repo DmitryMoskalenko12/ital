@@ -23,7 +23,7 @@ const Services: React.FC = () => {
                     <Image className="w-[100%] h-[100%] object-cover" src={src} width={285} height={285} alt="Our services"/>
                     <div className=" absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%] lg:w-[100%]">
                     <h3 className="text-[28px] text-white font-semibold text-center md:text-[16px] mdx:text-[18px] lg:text-[28px]">{t(content)}</h3>
-                    <Button clazz={'mt-[30px] md:text-[14px] lg:text-[18px]'} width={'w-[260px] md:w-[170px] mdx:w-[230px] lg:w-[260px]'} height={'h-[60px] md:h-[50px] mdx:h-[60px] lg:h-[60px]'} content={t(buttonContent)}/>
+                    <Button clazz={'mt-[30px] md:text-[14px] lg:text-[18px]'} width={'w-[170px] md:w-[180px] mdx:w-[230px] lg:w-[260px]'} height={'h-[50px] mdx:h-[60px] lg:h-[60px]'} content={t(buttonContent)}/>
                     </div>
                </div>
     }) : null;
