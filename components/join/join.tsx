@@ -5,6 +5,7 @@ import { useEffect } from 'react';
 import { fetchJoin } from "./joinSlice";
 import Link from "next/link";
 import Image from "next/image";
+import Button from "@/ui/button";
 
 const Join = () => {
     const dataImages = useAppSelector(state => state.join.joinImages);
@@ -34,6 +35,7 @@ const Join = () => {
                   {error}
                   {content}
                 </div>
+                <Button clazz={'mt-[30px] md:text-[14px] lg:text-[18px]'} width={'w-[170px] md:w-[180px] mdx:w-[230px] lg:w-[260px]'} height={'h-[50px] mdx:h-[60px] lg:h-[60px]'} content={t('join')}/>
             </div>
         </section>
     )
