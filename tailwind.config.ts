@@ -28,7 +28,8 @@ const config: Config = {
       },
       colors: {
         blackMain: '#424242',
-        hakki: '#D8B152'
+        hakki: '#D8B152',
+        bg: '#202020'
       },
       
       fontFamily: {

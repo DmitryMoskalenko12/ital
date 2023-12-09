@@ -27,7 +27,7 @@ const Join = () => {
     }) : null;
 
     return (
-        <section className=" px-[20px]">
+        <section className=" px-[20px] pb-[20px]">
             <div className="container">
                 <h2 className=" text-blackMain text-[30px] mb-[20px] md:text-[40px] font-semibold text-center">{t('join-us')}</h2>
                 <div className=" relative grid grid-cols-1 grid-rows-[262px] gap-[10px] justify-center md:grid-cols-2 md:grid-rows-[repeat(3,auto)] mdx:grid-cols-4 mdx:grid-rows-[repeat(2,auto)] lg:gap-[40px]">
