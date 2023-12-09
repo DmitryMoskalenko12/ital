@@ -1,4 +1,6 @@
 import { useTranslation } from "next-i18next";
+import Image from "next/image";
+import React from "react";
 
 const Footer:React.FC = () => {
 
@@ -37,6 +39,38 @@ const Footer:React.FC = () => {
                 <a className=" text-white font-normal text-[18px] decoration-0" href="#">{t('about-company')}</a>
              </li>
           </ul>
+
+          <ul className="flex flex-col items-center justify-center gap-[10px]">
+            <li className=" text-white font-semibold text-[18px]">{t('contacts')}</li>
+            <li>
+                <a className="flex justify-center items-center text-white font-normal text-[18px] gap-2 decoration-0" href="tel:+380996117693">
+                    <Image src={'/images/phone.png'} width={22} height={22} alt="phone"/> 
+                    <span>+38 099 611 7693</span>
+                </a>
+            </li>
+            <li>
+                <a className="flex justify-center items-center text-white font-normal text-[18px] gap-2 decoration-0" href="tel:+380996117693">
+                    <Image src={'/images/mail.png'} width={22} height={22} alt="mail"/> 
+                    <span>italproekt@gmail.com</span>
+                </a>
+            </li>
+          </ul>
+
+          <div className=" flex justify-center items-center flex-col">
+            <span className="text-white font-semibold text-[18px]">{t('social-networks')}</span>
+            <div className=" flex justify-between items-center gap-[20px]">
+               <a className=" block border-[1px] border-solid border-[#D8B152] w-[24px] h-[24px]" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M13.4044 20.9972V12.8012H16.1694L16.5804 9.59217H13.4044V7.54817C13.4044 6.62217 13.6624 5.98817 14.9914 5.98817H16.6754V3.12717C15.856 3.03936 15.0324 2.99696 14.2084 3.00017C11.7644 3.00017 10.0864 4.49217 10.0864 7.23117V9.58617H7.33936V12.7952H10.0924V20.9972H13.4044Z" fill="#D8B152" />
+                </svg>
+               </a>
+               <a className=" block border-[1px] border-solid border-[#D8B152] w-[24px] h-[24px]" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M13.4044 20.9972V12.8012H16.1694L16.5804 9.59217H13.4044V7.54817C13.4044 6.62217 13.6624 5.98817 14.9914 5.98817H16.6754V3.12717C15.856 3.03936 15.0324 2.99696 14.2084 3.00017C11.7644 3.00017 10.0864 4.49217 10.0864 7.23117V9.58617H7.33936V12.7952H10.0924V20.9972H13.4044Z" fill="#D8B152" />
+                </svg>
+               </a>
+            </div>
+          </div>
          </div>
         </div>
     </footer>
